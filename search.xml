@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>武汉大学新生寒假集训测试 Day1 题解</title>
+      <link href="/2020/02/whuwvttf-day1/"/>
+      <url>/2020/02/whuwvttf-day1/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="A-Vova-and-Train"><a href="#A-Vova-and-Train" class="headerlink" title="A - Vova and Train"></a>A - Vova and Train</h2><blockquote><p>Codeforces Round #515 Div. 3<br><a href="http://codeforces.com/problemset/problem/1066/A" target="_blank" rel="noopener">题目链接</a></p></blockquote><h3 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h3><p>一条坐标轴上，1-L上所有坐标是v的整数倍的地方有灯笼，但l-r区间灯笼被挡着了看不见，求能看到多少灯笼？</p><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>签到题，l-r区间把整个区间分成了两部分，答案就是1-(l-1)和(r+1)-L两个区间v的倍数的数的个数之和。</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">cpp</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">< cstdio ></span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">< cstring ></span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">< algorithm ></span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line"><span class="keyword">int</span> T;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>,&T);</span><br><span class="line"><span class="keyword">while</span>(T--)</span><br><span class="line">{</span><br><span class="line"><span class="keyword">int</span> len,v,l,r;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&len,&v,&l,&r);</span><br><span class="line"><span class="keyword">int</span> ans1=(l<span class="number">-1</span>)/v;</span><br><span class="line"><span class="keyword">int</span> ans2=len/v-r/v;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans1+ans2);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></body></html>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> algorithms contests whu icpc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/02/hello-world/"/>
       <url>/2020/02/hello-world/</url>
